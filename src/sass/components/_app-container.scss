@@ -1,0 +1,7 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  padding: rem(16px) 0;
+  @include vh(min-height, 100);
+}

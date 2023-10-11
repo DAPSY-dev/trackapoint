@@ -1,0 +1,53 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12px);
+  padding: rem(16px) rem(32px);
+  font-size: rem(20px);
+  color: var(--color-white);
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: rem(4px);
+  cursor: pointer;
+
+  &--sm {
+    padding: rem(4px) rem(8px);
+    font-size: rem(16px);
+  }
+
+  &--no-styles {
+    padding: 0;
+    color: currentColor;
+    background-color: transparent;
+  }
+
+  &--icon {
+    padding: rem(8px);
+    font-size: rem(24px);
+  }
+}
+
+.button-group {
+  display: flex;
+
+  .button {
+    flex: 1 1 0;
+
+    &:not(:first-of-type, :last-of-type) {
+      border-radius: 0;
+    }
+
+    &:first-of-type {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-of-type {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

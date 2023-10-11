@@ -1,0 +1,38 @@
+input[type='number'] {
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.form-label {
+  display: block;
+  padding-bottom: rem(8px);
+  width: max-content;
+  max-width: 100%;
+  font-size: rem(20px);
+}
+
+.form-control {
+  display: block;
+  padding: rem(16px);
+  width: 100%;
+  font-size: rem(20px);
+  color: var(--color-white);
+  background-color: transparent;
+  border: rem(1px) solid var(--color-white);
+  border-radius: rem(4px);
+}
+
+.check-radio {
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: rem(12px);
+    font-size: rem(18px);
+  }
+}

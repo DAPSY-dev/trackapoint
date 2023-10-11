@@ -1,0 +1,38 @@
+.full-width {
+  width: 100% !important;
+}
+
+$fs: (
+  'xs': rem(16px),
+  'sm': rem(18px),
+  'md': rem(20px),
+  'lg': rem(24px),
+  'xl': rem(32px),
+);
+
+@each $name, $size in $fs {
+  .fs-#{$name} {
+    font-size: $size !important;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.visually-hidden:not(caption),
+.visually-hidden-focusable:not(:focus):not(:focus-within):not(caption) {
+  position: absolute !important;
+}

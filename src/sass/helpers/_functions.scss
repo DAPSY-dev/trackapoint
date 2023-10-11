@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+@function rem($size, $font-size: $base-font-size) {
+  @return math.div($size, $font-size) * 1rem;
+}
+
+@function em($size, $font-size: $base-font-size) {
+  @return math.div($size, $font-size) * 1em;
+}

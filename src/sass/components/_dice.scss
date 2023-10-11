@@ -1,0 +1,13 @@
+.dice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: rem(32px);
+  text-align: center;
+
+  &__icon {
+    font-size: rem(72px);
+    line-height: 1;
+  }
+}

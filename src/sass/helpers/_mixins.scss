@@ -1,0 +1,11 @@
+@mixin vh($property, $value) {
+  #{$property}: calc(var(--vh, 1vh) * #{$value});
+}
+
+@mixin vh-total($property, $value) {
+  #{$property}: calc(var(--vh-total, 1vh-total) * #{$value});
+}
+
+@mixin vw($property, $value) {
+  #{$property}: calc(var(--vw, 1vw) * #{$value});
+}

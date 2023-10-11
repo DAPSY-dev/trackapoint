@@ -1,0 +1,33 @@
+// ========
+// CSS
+// ========
+:root,
+::before,
+::after,
+::backdrop {
+  //
+  // colors
+  //
+  --color-black: #000000;
+  --color-black-rgb: 0, 0, 0;
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
+
+  --color-dark: #242e42;
+  --color-darken: #2f3b52;
+
+  --color-primary: #4d4dff;
+
+  //
+  // fonts
+  //
+  --font-primary: 'Roboto', sans-serif;
+}
+
+// ========
+// SCSS
+// ========
+//
+// fonts
+//
+$base-font-size: 16px;

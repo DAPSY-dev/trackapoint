@@ -1,0 +1,68 @@
+$spacing: (
+  '0': 0,
+  'xxs': rem(4px),
+  'xs': rem(8px),
+  'sm': rem(16px),
+  'md': rem(24px),
+  'lg': rem(32px),
+  'xl': rem(48px),
+  'xxl': rem(64px),
+);
+
+@each $name, $size in $spacing {
+  .m-#{$name} {
+    margin: $size !important;
+  }
+  .mt-#{$name} {
+    margin-top: $size !important;
+  }
+  .me-#{$name} {
+    margin-right: $size !important;
+  }
+  .mb-#{$name} {
+    margin-bottom: $size !important;
+  }
+  .ms-#{$name} {
+    margin-left: $size !important;
+  }
+  .mx-#{$name} {
+    margin-left: $size !important;
+    margin-right: $size !important;
+  }
+  .my-#{$name} {
+    margin-top: $size !important;
+    margin-bottom: $size !important;
+  }
+  .p-#{$name} {
+    padding: $size !important;
+  }
+  .pt-#{$name} {
+    padding-top: $size !important;
+  }
+  .pe-#{$name} {
+    padding-right: $size !important;
+  }
+  .pb-#{$name} {
+    padding-bottom: $size !important;
+  }
+  .ps-#{$name} {
+    padding-left: $size !important;
+  }
+  .px-#{$name} {
+    padding-left: $size !important;
+    padding-right: $size !important;
+  }
+  .py-#{$name} {
+    padding-top: $size !important;
+    padding-bottom: $size !important;
+  }
+  .g-#{$name} {
+    gap: $size !important;
+  }
+  .gx-#{$name} {
+    column-gap: $size !important;
+  }
+  .gy-#{$name} {
+    row-gap: $size !important;
+  }
+}

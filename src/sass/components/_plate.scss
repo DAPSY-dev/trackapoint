@@ -1,0 +1,10 @@
+.plate {
+  padding: rem(16px);
+  background-color: var(--color-darken);
+  border-radius: rem(4px);
+  box-shadow: rem(2px) rem(4px) rem(8px) rem(-2px) rgba(var(--color-black-rgb), 0.1);
+
+  &--md {
+    padding: rem(24px);
+  }
+}
